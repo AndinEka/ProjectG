@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+} 
+
+body {
+background: #fff;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+line-height: 18px;
+color: #333333;;
+}
+
+img { border: none; }
+a { color: #57626a; text-decoration: none; }
+a:hover { text-decoration: underline; color : #000; }
+
+#wrap {
+margin: 0 auto;
+width: 800px;
+}
+
+#header { 
+padding: 10px 0 20px 0;
+}
+#header h1 {
+font-size: 26px;
+font-weight: 100;
+letter-spacing: -3px;
+padding: 12px 0 5px 10px;
+}
+#header h1 a {
+color: #57626a;
+text-decoration: none;
+}
+#header h1 a:hover {
+color: #57626a;
+text-decoration: none;
+}
+#header h2 {
+color: #ccc;
+font-size: 15px;
+font-weight: 100;
+padding: 0 0 0 11px;
+letter-spacing: -1px;
+line-height: 12px;
+}
+/*Search*/
+.searchform {
+	background-color: transparent;
+	border: none;	
+	margin: 0; padding: 12px 0 15px 8px;	
+	width: 190px;	
+}
+.searchform p { margin: 0; padding: 0 0 10px 0; }
+.searchform input.textbox { 
+	width: 115px;
+	color: #666666; 
+	height: 18px;
+	padding: 2px;	
+	vertical-align: top;
+}
+.searchform input.button { 
+	width: 60px;
+	height: 24px;
+	padding: 2px 5px;
+	vertical-align: top;
+}
+
+#header-wrap form#quick-search{
+	position: absolute;
+	top: 120px; right: 300px;
+	padding: 0px; margin: 0;
+	width: 260px; height: 26px;
+	background: #fff;
+	z-index: 999999;
+	border: 1px solid #d8d8d8;
+}
+#header-wrap form#quick-search p {
+	margin: 0; padding: 0;
+}
+#header-wrap form#quick-search .tbox{
+	margin: 2px 0 0 4px;
+	width: 210px;
+	background: none;
+	border: none;
+	color: #ababab;
+}
+#header-wrap form#quick-search label,
+#header-wrap form#quick-search .btn{
+	display: none;
+}
+
+#lean_ovelay{
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+}
+.popupContainer{
+	position: absolute;
+	width: 330px;
+	height: auto;
+	right: 45%;
+	top: 80px;
+	background: #fff;
+}
+#modal_trigger {margin-right: 100px auto; width: 70px; display: block;}
+.btn{padding: 10px 20px; background: none; margin-left: 640px;}
+.btn_red {background: #ED6347; color: #FFF;}
+
+.btn:hover {background: #E4E4E2;}
+.btn_red:hover {background: #C12B05;}
+
+a.btn {color: #666; text-align: center; text-decoration: none;}
+a.btn_red {color: #FFF;}
+
+.one_half {width: 50%; display: block; float: left;}
+.one_half.last {width: 45%; margin-left: 5%;}
+
+/*Popup*/
+.popupHeader{font-size: 16px; text-transform: uppercase;}
+.popupHeader {background: #F4F4F2; position: relative; padding: 10px 20px;
+border-bottom: 1px solid #DDD; font-weight: bold;}
+.popupHeader .modal_close{position: absolute; right: :0; top: 0px; padding: 10pc 15px;
+background: #E4E4E2; cursor: pointer; color: #aaa; font-size: 16px;}
+.popupBody {padding: 20px;}
+
+/*User Login*/
+.user_login {}
+.user_login label {display: block; clear: both;padding: 10px; margin-bottom: 10px; background: #F4F4F2; overflow: hidden;}
+.user_login input[type="text"], .user_login input[type="email"],
+.user_login input[type="password"] {display: block; width: 90%; padding: 10px; border: 1px solid #DDD; color: #666;}
+.user_login input[type="checkbox"] {float: left; margin-left: 5px;}
+.user_login input[type="checkbox"]+label {float: left;}
+
+.centeredText{text-align: center; margin: 20px 0; clear: both; overflow: hidden; text-transform: uppercase;}
+.action_btns {clear: both; overflow: hidden;}
+.action_btns a {display: block;}
+
+
+.user_login .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+.forgot_password {display: block; margin: 20px 0 10px; clear: both; overflow: hidden; text-decoration: none; color: #ED6347;}
+
+/*User Register*/
+.user_register {display: none;}
+.user_register label {display: block; margin-bottom: 5px;}
+.user_register input[type="text"], .user_login input[type="email"],
+.user_register input[type="password"] {display: block; width: 90%; padding: 10px; border: 1px solid #DDD; color: #666;}
+.user_register input[type="checkbox"] {float: left; margin-right: 5px;}
+.user_register input[type="chechbox"]+label {float: left;}
+
+.user register .checkbox {margin-bottom: 10px; clear: both; overflow: hidden;}
+
+
+#menu {
+height: 40px;
+line-height: 40px;
+background: #57626a url(images/menu.jpg) no-repeat;
+text-transform: uppercase;
+}
+#menu ul {
+padding-left: 10px;
+list-style-type: none;
+}
+#menu ul li {
+display: block;
+float: left;
+}
+#menu ul li a {
+color: #eee;
+padding: 0 10px;
+text-decoration: none;
+font-weight: 100;
+font-size: 14px;
+letter-spacing: -1px;
+}
+#menu ul li a:hover {
+color: #eee;
+text-decoration: underline;
+}
+
+#content {
+padding: 10px 20px;
+}
+
+.right {
+width: 568px;
+float: right;
+text-align: justify;
+}
+.right h2 {
+color: #FF4800;
+font-size: 20px;
+letter-spacing: -3px;
+font-weight: 100;
+padding : 10px 0 15px 0;
+}
+
+.left {
+width: 150px;
+float: left;
+padding: 10px;
+border-right: 1px solid #bbb;
+font-size: 12px;
+}
+.left ul {
+list-style-type: square;
+padding: 5px 10px 10px 20px;
+color: #57626a;
+}
+.left h2 {
+height: 30px;
+font-size: 14px;
+color: #666;
+line-height: 30px;
+font-weight: 600;
+}
+.left a { text-decoration: none }
+
+#footer {
+background: #eee;
+border-top: 3px solid #57626a;
+margin-top: 20px;
+text-align: center;
+color: #333;
+font-size: 11px;
+padding: 10px;
+}
